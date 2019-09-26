@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ordem de Serviço</title>
+
+		<style type="text/css">
+
+			body {
+				font-family: Arial, Helvetica, Sans-serif !important;
+				font-size: 14px;
+			}
+
+			table{
+				width: 100%;
+				color: #888888;
+				font-size: 16px;
+				margin:0;
+				padding:0;
+				border:0;
+			}
+			.center{
+				text-align: center;
+			}
+			.header{
+				color: #E00500;
+				font-size: 22px;
+				padding-bottom: 20px;
+			}
+			
+			header {
+				position: running(header);
+				font-family: Conduit !important;
+				font-size: 14px;
+				color: #888888;
+			}
+
+			footer {
+				font-family: Conduit !important;
+				font-size: 12px;
+				height: 30px;
+				background: #E00500;
+				color: #ffffff;
+
+				margin-bottom: -10px;
+
+				padding-left: 30px;
+				padding-top: 10px;
+
+				position: running(footer);
+			}
+
+			.custom-footer-page-number:after {
+				content: counter(page) " DE " counter(pages);
+			}
+
+			@page {
+
+				@top-left {
+					height: 100px;
+					content: element(header);
+				}
+
+				@bottom-left {
+					content: element(footer);
+				}
+				margin-top: 150px;
+				margin-left : 0px;
+				margin-right : 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div style="width: 750px; margin: 0 auto; background: #ffffff">
+
+			<header>
+				<div style="width: 25%; height: 160px; display: inline-block;">
+					<img src="https://sistema.tstonline.com.br/assets/images/logo.png" style="margin-left: 20px; height: 70px;" />
+				</div>
+
+				<div style="width: 71%; height: 160px; text-align:right; display: inline-block; margin-top:20px;">
+					<h2 style="font-weight: normal; margin: 0">Ordem de Serviço</h2>
+					<h2 style="margin: 0">${OrdemServicoNumero}</h2>
+					<p>
+						O.S. emitida em ${DataInclusao} às ${HorarioInclusao}
+					</p>
+				</div>
+
+				<div style="width: 94%; position: absolute; top:140px; z-index: -1; margin-left:20px;">
+					<hr style="border: solid 0.5px #6a6d73;" />
+				</div>
+			</header>
+
+			<table cellpadding="0" cellspacing="0" style="font-size: 15px;">
+				<tr>
+					<td>
+						<div class="header">Dados da O.S</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Número O.S: </span></td>
+								<td>000001</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Data da prestação de serviço:</span></td>
+								<td>26/09/2019</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<br />
+						<br />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class="header">Dados do Responsável</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Nome: </span></td>
+								<td>MARCELO MOREIRA BUENO</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<br />
+						<br />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<div class="header">Dados do Local de Realização do Serviço</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Nome Local: </span></td>
+								<td>HOSPITAL NIPO</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>CEP:</span></td>
+								<td>02130-040</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Endereço:</span></td>
+								<td>Rua Pistoia, 100</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Número:</span></td>
+								<td>100</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Complemento:</span></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Bairro:</span></td>
+								<td>Parque Novo Mundo</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Cidade:</span></td>
+								<td>São Paulo / SP</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<br />
+						<br />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class="header">Dados do Contato</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Nome: </span></td>
+								<td>MARCELO MOREIRA BUENO</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Telefone: </span></td>
+								<td>(11) 2387-1656</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>WhatsApp: </span></td>
+								<td>(11) 99906-4656</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<br />
+						<br />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class="header">Serviços que serão realizados</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Serviço: </span></td>
+								<td>Acompanhamento</td>
+								<td style="font-weight: bold; width: 10%"><span>Obs: </span></td>
+								<td>Fazer Acompanhamento lamsdlaksmd laksmd laksd malkdm alskdm alskdm alskdm alskdm alsdkm</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Serviço: </span></td>
+								<td>Acompanhamento</td>
+								<td style="font-weight: bold; width: 10%"><span>Obs: </span></td>
+								<td>Fazer Acompanhamento lamsdlaksmd laksmd laksd malkdm alskdm alskdm alskdm alskdm alsdkm</td>
+							</tr>
+							<tr>
+								<td style="font-weight: bold; width: 40%"><span>Serviço: </span></td>
+								<td>Acompanhamento</td>
+								<td style="font-weight: bold; width: 10%"><span>Obs: </span></td>
+								<td>Fazer Acompanhamento lamsdlaksmd laksmd laksd malkdm alskdm alskdm alskdm alskdm alsdkm</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<footer>
+					<div style="width:80%; display: inline-block;">O.S ${OrdemServicoNumero} emitida em ${DataInclusaoPorExtenso} </div> <div style="width:15%; text-align:right; display: inline-block;"><span class="custom-footer-page-number">PÁGINA: </span></div>
+				</footer>
+
+			</table>
+
+		</div>
+
+	</body>
+
+</html>

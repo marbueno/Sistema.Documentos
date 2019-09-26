@@ -1,0 +1,8 @@
+/packages
+/.vs
+/src/Sistema.Documentos/bin
+/src/Sistema.Documentos/obj
+/test/Sistema.Documentos.Test/bin
+/test/Sistema.Documentos.Test/obj
+/test/Sistema.Documentos.IntegrationTest/obj
+/test/Sistema.Documentos.IntegrationTest/bin
